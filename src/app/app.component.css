@@ -2,10 +2,11 @@
     margin-top: 28px;
 }
 
+/* Elementos da busca  */
 .box-search input {
     position: relative;
     float: left;
-    width: 480px;
+    width: 460px;
     height: 40px;
     object-fit: contain;
     border-radius: 4px;
@@ -38,7 +39,7 @@
     z-index: 1;  
 }
 
-.btn-outline-secondary{
+.btn-outline-secondary {
     border: solid 1px #e6e6e6;
     height: 40px;
     font-family: Roboto;
@@ -52,13 +53,49 @@
     color: #1a1a1a;
     border-radius: 0px 0px 0px 0px;
     z-index: 2;
+    border-left: none;
+    
 }
 
-.btn-search {
+.btn-outline-secondary:link, .btn-outline-secondary:visited, .btn-outline-secondary:hover, .btn-outline-secondary:focus,  .btn-outline-secondary:active  {
+    background-color: #fff;
+    color: #1a1a1a;
+    border-left: none;
+}
+
+ul.dropdown-menu {
+    border-radius: 0px 0px 0px 0px;
+    border: solid 1px #e6e6e6;
+}
+
+ul li a.dropdown-item,
+ul li a.dropdown-item:hover  {
+    position: relative;
+    float: left;
+    width: 102px;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #666666;
+      padding-left:-50px; 
+      padding-bottom: 7px;
+      padding-top: 7px;
+      background-color: none;
+  }
+
+ul li a.dropdown-item span {
+      margin-left:-12px; 
+}
+
+.btn-search .show {
     background-color: #fafafa;
     border-radius: 0px 4px 4px 0px;
 }
-
 
 .fa.fa-search {
     position: absolute;
@@ -75,9 +112,54 @@
 .box-search {
     width: 675px;
 }
+
+.pesquisa-avacada i {
+    margin-left: 5px;
+}
+
+.pesquisa-avacada a  {
+    margin-bottom:21px; 
+    margin-top:10px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1a1a1a;
+  }
+
+.has-search .form-control-feedback {
+    right: initial;
+    left: 0;
+    color: #ccc;
+}
+
+.has-search .form-control {
+    padding-right: 12px;
+    padding-left: 34px;
+}
+
+
+/* Elementos da lista de notícias  */
 .box-list {
     width: 675px;
 }
+
+.results p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1a1a1a;
+}
+
 .box-news .list-unstyled li.list:last-child a:first-child figure {
 
     display: none;
@@ -138,40 +220,6 @@ figure.effect-julia img {
     border-bottom:1px solid #d8d8d8;
 }
 
-.pesquisa-avacada {
-    margin-bottom:21px; 
-    margin-top:10px;
-}
-
-.pesquisa-avacada i {
-    margin-left: 5px;
-}
-
-.pesquisa-avacada a {
-   
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #1a1a1a;
-  }
-
-.results p {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #1a1a1a;
-}
-
 .line {
     width: 50px;
     height: 5px;
@@ -179,7 +227,7 @@ figure.effect-julia img {
     margin-bottom: 14px;
   }
 
- .list {
+.list {
     margin-bottom: 19px;
     padding-bottom: 19px;
 }
@@ -212,6 +260,8 @@ figure.effect-julia img {
     color: #666666;
 }
 
+
+/* elementos ver mais matérias */
 .box-footer {
     position: relative;
     top: -10px;
@@ -247,6 +297,7 @@ figure.effect-julia img {
     border-left:0px solid #000000;
     padding-top: 12px;
     padding-bottom: 11px;
+    margin-bottom: 100px; 
 }
 
 .box-load a {
@@ -260,28 +311,8 @@ figure.effect-julia img {
   text-align: center;
   color: #1a1a1a;
 }
-.box-load a~a {
-    font-family: Merriweather;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #1a1a1a; 
-}
 
-.has-search .form-control-feedback {
-    right: initial;
-    left: 0;
-    color: #ccc;
-}
 
-.has-search .form-control {
-    padding-right: 12px;
-    padding-left: 34px;
-}
 
 
 

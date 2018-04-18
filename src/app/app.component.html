@@ -1,22 +1,30 @@
 <div class="container">
-   <hr class="line-header">
+ <hr class="line-header">
  <div class="row box">   
     <div class="box-search mx-auto">
         <i class="fa fa-search" aria-hidden="true"></i>
         <input #textoProcurado (keyup)="0" class="form-control" placeholder="Filtrar por título">  
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">em todo o site</button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div role="separator" class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
+            <div class="btn-group" dropdown>
+                <button dropdownToggle type="button" class="btn btn-outline-secondary dropdown-toggle">
+                  em todo o site <span class="caret"></span>
+                </button>
+                <ul *dropdownMenu class="dropdown-menu" role="menu">
+                  <li role="menuitem"><a class="dropdown-item" href="#"><span>Notícias (34613)</span></a></li>
+                  <li role="menuitem"><a class="dropdown-item" href="#"><span>Vídeos (10000)</span></a></li>
+                  <li role="menuitem"><a class="dropdown-item" href="#"><span>Fotos (8000)</span></a></li>
+                  <li role="menuitem"><a class="dropdown-item" href="#"><span>Blogs (2000)</span></a>
+                  </li>
+                </ul>
+              </div>
           <button class="btn btn-outline-secondary btn-search" type="button">Pesquisar</button>
         </div>
         <div class="pesquisa-avacada">       
-            <a href="#">Pesquisa Avançada <i class="fas fa-caret-down"></i></a>
+            <div class="btn-group" dropdown>
+                <a dropdownToggle type="text" class="dropdown-toggle">
+                  Pesquisa avançada<span class="caret"></span>
+                </a> 
+              </div>
         </div>
     </div>
  </div>

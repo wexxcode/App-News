@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown'
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
