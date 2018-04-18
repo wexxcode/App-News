@@ -1,0 +1,57 @@
+<div class="container">
+   <hr class="line-header">
+ <div class="row box">   
+    <div class="box-search mx-auto">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input #textoProcurado (keyup)="0" class="form-control" placeholder="Filtrar por título">  
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">em todo o site</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+          <button class="btn btn-outline-secondary btn-search" type="button">Pesquisar</button>
+        </div>
+        <div class="pesquisa-avacada">       
+            <a href="#">Pesquisa Avançada <i class="fas fa-caret-down"></i></a>
+        </div>
+    </div>
+ </div>
+ <div class="row">
+    <div class="box-list mx-auto">
+        <div class="box-results">
+            <span class="results">
+              <div class="line"></div>           
+              <p style="width:100px; position:relative" *ngIf="!noticia">{{ artigos.length }} resultados para ""{{textoProcurado.value}}"</p>  
+            </span>
+          </div>
+          <div class="box-news">
+              <ul class="list-unstyled">
+                  <li *ngFor="let artigo of artigos | slice : startPage:paginationLimit | filtroDaBusca:textoProcurado.value"  class="list media">                  
+                      <a href="{{artigo.url}}" class="display-none">
+                        <figure class="effect-julia">               
+                              <img class="img-fluid" src="{{artigo.imagem}}" alt="img21"/>                 
+                        </figure>
+                      </a>
+                      <div class="media-body"> 
+                        <a href="{{artigo.url}}"><h2 class="mt-0 mb-1">{{artigo.titulo}}</h2>
+                          <p class="text-justify">{{artigo.descricao}}</p>
+                        </a>
+                        <div class="box-footer">
+                          <span>{{artigo.hora}} - {{artigo.data}}</span><span> - Compartilhe<img src='../assets/images/facebook-box.svg'><img src='../assets/images/twitter-box.svg'></span>
+                        </div>
+                      </div>
+                  </li>
+                </ul>
+                <div class="box-load text-center">
+                    <a  *ngIf ="paginationLimit < artigos.length" (click)="showMoreItems()">
+                      Ver mais matérias
+                    </a>  
+                </div>
+          </div>     
+    </div>
+  </div>
+</div>

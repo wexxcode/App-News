@@ -1,0 +1,303 @@
+.line-header{
+    margin-top: 28px;
+}
+
+.box-search input {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 4px;
+    background-color: #fafafa;
+    
+    border: solid 1px #e6e6e6;
+    border-radius: 4px 0px 0px 4px;
+  }
+
+.box-search input[textarea] {
+    background-color: #06b91e;
+}
+
+.form-control {
+    padding-left: 43px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+     line-height: normal;
+    letter-spacing: normal;
+     text-align: left;
+    color: #666666;
+}
+
+.input-group-append {
+    background-color: #fff;
+    width: 150px;
+    z-index: 1;  
+}
+
+.btn-outline-secondary{
+    border: solid 1px #e6e6e6;
+    height: 40px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1a1a1a;
+    border-radius: 0px 0px 0px 0px;
+    z-index: 2;
+}
+
+.btn-search {
+    background-color: #fafafa;
+    border-radius: 0px 4px 4px 0px;
+}
+
+
+.fa.fa-search {
+    position: absolute;
+    float: left;
+    z-index: 1;
+    margin-left: 15px;
+    margin-top: 13px;   
+  }
+  
+.box {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.box-search {
+    width: 675px;
+}
+.box-list {
+    width: 675px;
+}
+.box-news .list-unstyled li.list:last-child a:first-child figure {
+
+    display: none;
+}
+
+figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0 15px 0 0;
+	min-width: 215px;
+	max-width: 215px;	
+	height: 144px;	
+	cursor: pointer;
+}
+
+figure.effect-julia img {
+    position: relative;
+    min-width: 130%;
+    max-width: 100%;
+    left:-10%;
+    top:-5%;
+	height: auto;
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.box-news .list-unstyled li.list:first-child a:first-child figure img:first-child {
+    position: relative;
+    min-width: 130%;
+    max-width: 100%;
+    left:-10%;
+    top:-50%;
+	height: auto;
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.box-results {
+    width: 100px;
+    height: 57px;
+    position: relative;
+    float: left;
+ 
+}
+
+.box-news {
+    width: 560px;
+    float: left;
+    position: relative;
+   
+}
+.box-news li {
+    border-bottom:1px solid #d8d8d8;
+}
+
+.pesquisa-avacada {
+    margin-bottom:21px; 
+    margin-top:10px;
+}
+
+.pesquisa-avacada i {
+    margin-left: 5px;
+}
+
+.pesquisa-avacada a {
+   
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1a1a1a;
+  }
+
+.results p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1a1a1a;
+}
+
+.line {
+    width: 50px;
+    height: 5px;
+    background-color: #1a1a1a;
+    margin-bottom: 14px;
+  }
+
+ .list {
+    margin-bottom: 19px;
+    padding-bottom: 19px;
+}
+
+.list a h2 {
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666666; 
+}
+
+.list a:hover {
+   text-decoration: none;  
+}
+
+.list p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666666;
+}
+
+.box-footer {
+    position: relative;
+    top: -10px;
+   
+}
+
+.box-footer span {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666666;
+}
+
+.box-footer img {
+   margin-left: 5px;
+   width: 10px;
+   height: 10px;
+   
+}
+
+.box-load {
+    width: 560px;
+    
+    position: relative;
+    border-top:5px solid #000000;
+    border-right:0px solid #000000;
+    border-bottom:1px solid #000000;
+    border-left:0px solid #000000;
+    padding-top: 12px;
+    padding-bottom: 11px;
+}
+
+.box-load a {
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1a1a1a;
+}
+.box-load a~a {
+    font-family: Merriweather;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1a1a1a; 
+}
+
+.has-search .form-control-feedback {
+    right: initial;
+    left: 0;
+    color: #ccc;
+}
+
+.has-search .form-control {
+    padding-right: 12px;
+    padding-left: 34px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
